@@ -1,0 +1,33 @@
+{
+  "name": "ad-platform-demo",
+  "private": true,
+  "license": "MIT",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "start": "echo 'use docker compose up'",
+    "test": "pnpm -r test",
+    "test:unit": "pnpm -r test:unit",
+    "test:int": "pnpm -r test:int",
+    "test:e2e": "pnpm -r test:e2e",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "format": "prettier --write .",
+    "migrate": "echo 'prisma migrate not implemented'",
+    "seed": "echo 'seed script not implemented'"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,md,json}": ["prettier --write", "eslint --fix"]
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-unused-imports": "^3.1.0",
+    "husky": "^9.0.10",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.0"
+  }
+}

@@ -1,2 +1,8 @@
-/venv/
-.idea
+node_modules
+/dist
+packages/**/dist
+apps/**/dist
+coverage
+.env
+.DS_Store
+pnpm-lock.yaml

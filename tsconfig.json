@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    {"path": "packages/types"},
+    {"path": "packages/domain"},
+    {"path": "packages/adapters"},
+    {"path": "apps/api"},
+    {"path": "apps/web"}
+  ]
+}
